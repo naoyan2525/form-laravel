@@ -1,0 +1,32 @@
+.contact_home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact_title {
+    font-size: 20px;
+    margin-bottom: 50px;
+    height: 30px;
+    background-color: black;
+    color: white;
+    padding: 15px;
+  
+}
+
+.contact_2_title {
+    font-size: 20px;
+    margin-bottom: 50px;
+    height: 30px;
+    text-align: center;
+}
+
+.contact_form {
+    display: flex;
+    align-items: center;
+}
+
+.contact_form_name {
+    margin-bottom: 20px;
+}
+
