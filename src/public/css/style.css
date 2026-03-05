@@ -1,32 +1,76 @@
 .contact_home {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+width: 600px;
+margin: 0 auto;
+
+}
+
+.header {
+    text-align: center;
+    background-color: #000000;
+    margin: 0 auto;
+    width: 95%;
 }
 
 .contact_title {
     font-size: 20px;
-    margin-bottom: 50px;
-    height: 30px;
-    background-color: black;
+    margin: 0 auto;
     color: white;
-    padding: 15px;
-  
+    padding: 15px 0 15px 20px;
+    padding-right: 350px;
 }
 
 .contact_2_title {
-    font-size: 20px;
-    margin-bottom: 50px;
-    height: 30px;
+
     text-align: center;
 }
 
 .contact_form {
+    margin-bottom: 30px;
     display: flex;
     align-items: center;
 }
 
-.contact_form_name {
-    margin-bottom: 20px;
+.contact_form_email {
+    margin-bottom: 30px;    
+    display: flex;
+    align-items: center;
 }
 
+.contact_form_message {
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;    
+
+}
+.required {
+    background-color: rgb(215, 215, 218);
+    color: rgb(147, 145, 145);
+    padding: 2px 5px;
+    margin-left: 5px;
+    font-size: 10px;
+    white-space: nowrap;
+
+
+}
+
+label {
+    width: 200px;
+    display: inline-block;
+
+}
+
+input {
+    width: 400px;
+    height: 30px;
+}
+
+textarea {
+    width: 400px;
+    height: 100px;
+}
+
+button {
+    display: block;
+    margin: 20px auto;
+    padding:8px 30px;
+}

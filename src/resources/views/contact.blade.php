@@ -20,15 +20,15 @@
   <form action="/contact" method="post" class="contact_home">
     @csrf
     <div class="contact_form">
-      <label for="name">お名前</label>
+      <label for="name">お名前 <span class="required">必須</span></label>
       <input type="text" id="name" name="name" required>
     </div>
     <div class="contact_form_email">
-      <label for="email">メールアドレス</label>
+      <label for="email">メールアドレス <span class="required">必須</span></label>
       <input type="email" id="email" name="email" required>
     </div>
     <div class="contact_form_message">
-      <label for="message">お問い合わせ内容</label>
+      <label for="message">お問い合わせ内容 <span class="required">必須</span></label>
       <textarea id="message" name="message" rows="5" required></textarea>
     </div>
     <button type="submit">送信</button>
