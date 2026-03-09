@@ -10,22 +10,49 @@
 </head>
 
 <body>
-<h2>{{ $title }}</h2>
 
-<p>名前：{{ $data['name'] }}</p>
-<p>メール：{{ $data['email'] }}</p>
-<p>電話番号：{{ $data['tel'] }}</p>
-<p>内容：{{ $data['message'] }}</p>
+  <header class="header">
+    <h1 class="contact_title">Contact Form</h1>
+  </header>
 
-<form action="/contact" method="post">
-@csrf
+  
+
+<h2 class="confirm_title">{{ $title }}</h2>
+
+<form action="/contact/send" method="post" class="confirm_home">
+    @csrf
+<div class="confirm_home">
+
+<table class="confirm_table">
+<tr>
+
+<th>名前</th>
+<td>{{ $data['name'] }}</td>
+</tr>
+
+<tr>
+<th>メール</th>
+<td>{{ $data['email'] }}</td>
+</tr>
+
+<tr>
+<th>電話番号</th>
+<td>{{ $data['tel'] }}</td>
+</tr>
+
+<tr>
+<th>内容</th>
+<td>{{ $data['message'] }}</td>
+</tr>
+
+</table>
 
 <input type="hidden" name="name" value="{{ $data['name'] }}">
 <input type="hidden" name="email" value="{{ $data['email'] }}">
 <input type="hidden" name="tel" value="{{ $data['tel'] }}">
 <input type="hidden" name="message" value="{{ $data['message'] }}">
 
-<button type="submit">送信</button>
+<button type="submit" class="confirm_button">送信</button>
 
 </form>
 
