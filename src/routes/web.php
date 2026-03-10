@@ -13,7 +13,6 @@ use App\Http\Controllers\ContactController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
 Route::get('/contact', [ContactController::class, 'index']);
-Route::post('/contact', [ContactController::class, 'store']);
-
+Route::post('/contact/confirm', [ContactController::class, 'confirm']);
+Route::post('/contact/send', [ContactController::class, 'send']);
